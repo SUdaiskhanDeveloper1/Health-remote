@@ -1,0 +1,3 @@
+"use client";
+import { Badge, Box, Card, CardBody, Heading, HStack, Progress, Text, VStack } from '@chakra-ui/react';
+export default function DeviceStatusPanel(){return <Card bg="white"><CardBody><Heading size="md">Device Status Dashboard</Heading><VStack align="stretch" mt={5}>{[['Online devices',86,'success'],['Needs review',12,'warning'],['Offline gateways',4,'danger']].map(([l,v,b]:any)=><Box key={l}><HStack justify="space-between"><Text fontWeight="700">{l}</Text><Badge variant={b}>{v}</Badge></HStack><Progress mt={2} value={v} rounded="full"/></Box>)}</VStack></CardBody></Card>}

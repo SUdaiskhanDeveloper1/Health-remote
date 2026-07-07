@@ -1,0 +1,2 @@
+export const statusVariant = (status:string) => status.includes('High') || status.includes('Critical') || status.includes('Offline') || status.includes('Cancelled') ? 'danger' : status.includes('Medium') || status.includes('Review') || status.includes('Rescheduled') ? 'warning' : 'success';
+export const programLabel = (slug:string) => slug.split('-').map(w=>w[0].toUpperCase()+w.slice(1)).join(' ');

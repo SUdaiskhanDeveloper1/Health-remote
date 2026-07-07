@@ -1,0 +1,3 @@
+"use client";
+import { Badge, Card, CardBody, Heading, Table, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/react'; import { patients } from '@/data/patients'; import { statusVariant } from '@/lib/utils';
+export default function AlertTable(){return <Card bg="white"><CardBody><Heading size="md" mb={4}>Vitals Alert Table</Heading><Table><Thead><Tr><Th>Patient</Th><Th>Condition</Th><Th>Reading</Th><Th>Risk</Th></Tr></Thead><Tbody>{patients.map(p=><Tr key={p.id}><Td>{p.name}</Td><Td>{p.condition}</Td><Td>{p.lastReading}</Td><Td><Badge variant={statusVariant(p.riskLevel)}>{p.riskLevel}</Badge></Td></Tr>)}</Tbody></Table></CardBody></Card>}

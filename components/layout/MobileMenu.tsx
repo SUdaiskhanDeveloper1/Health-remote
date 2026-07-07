@@ -1,0 +1,5 @@
+"use client";
+import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Stack } from '@chakra-ui/react';
+import Link from 'next/link';
+const links=[['Home','/'],['Devices','/devices'],['Patient App','/patient-app'],['Provider Dashboard','/dashboard/provider'],['Patient Dashboard','/dashboard/patient'],['Appointments','/appointments'],['Pricing','/pricing'],['Request Demo','/request-demo']];
+export default function MobileMenu({isOpen,onClose}:{isOpen:boolean;onClose:()=>void}){return <Drawer isOpen={isOpen} placement="right" onClose={onClose}><DrawerOverlay/><DrawerContent><DrawerCloseButton/><DrawerHeader color="brand.navy">CareSync Pro</DrawerHeader><DrawerBody><Stack spacing={3}>{links.map(([label,href])=><Button as={Link} href={href} variant="secondary" justifyContent="start" key={href} onClick={onClose}>{label}</Button>)}<Button as={Link} href="/request-demo" variant="demo" onClick={onClose}>Request Demo</Button></Stack></DrawerBody></DrawerContent></Drawer>}

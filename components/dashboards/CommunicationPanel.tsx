@@ -1,0 +1,3 @@
+"use client";
+import { Avatar, Card, CardBody, Heading, HStack, Text, VStack } from '@chakra-ui/react';
+export default function CommunicationPanel(){return <Card bg="white"><CardBody><Heading size="md">Communication Center</Heading><VStack mt={5} align="stretch">{['Care call completed','Medication reminder sent','Video visit placeholder opened'].map((x,i)=><HStack key={x} bg="brand.page" p={3} rounded="14px"><Avatar size="sm" name={`U${i}`}/><Text fontWeight="700">{x}</Text></HStack>)}</VStack></CardBody></Card>}
