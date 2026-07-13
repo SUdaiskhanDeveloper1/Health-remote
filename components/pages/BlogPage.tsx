@@ -1,3 +1,4 @@
+"use client";
 import { Container, Heading, Text, Stack, Link as ChakraLink, Box, Button } from '@chakra-ui/react';
 
 const DUMMY = 'https://www.marham.pk/';

@@ -1,3 +1,2 @@
-"use client";
 import { Badge, Box, Heading, Text, VStack } from '@chakra-ui/react';
 export default function SectionHeading({eyebrow,title,description,center=false}:{eyebrow?:string;title:string;description?:string;center?:boolean}){return <VStack align={center?'center':'start'} textAlign={center?'center':'left'} spacing={3} maxW="760px" mx={center?'auto':0}>{eyebrow&&<Badge variant="info">{eyebrow}</Badge>}<Heading size={{base:'xl',md:'2xl'}}>{title}</Heading>{description&&<Text color="brand.muted" fontSize={{base:'md',md:'lg'}}>{description}</Text>}</VStack>}

@@ -6,7 +6,7 @@ export default function ContactPage(){
       <Box bg="gray.50" py={12}>
         <Container maxW="container.md">
           <Heading>Contact</Heading>
-          <Text color="gray.600" mt={2}>Questions? Reach out and we'll get back to you.</Text>
+          <Text color="gray.600" mt={2}>Questions? Reach out and we&apos;ll get back to you.</Text>
           <Button as="a" href="mailto:demo@example.com" mt={4} colorScheme="teal">Email Us</Button>
         </Container>
       </Box>

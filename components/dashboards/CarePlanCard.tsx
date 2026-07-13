@@ -1,3 +1,2 @@
-"use client";
 import { Card, CardBody, Heading, HStack, Progress, Text, VStack } from '@chakra-ui/react';
 export default function CarePlanCard(){return <Card bg="white"><CardBody><Heading size="md">Care Plan Progress</Heading><VStack mt={5} align="stretch">{['Medication review','Monthly call','Education completed'].map((x,i)=><div key={x}><HStack justify="space-between"><Text>{x}</Text><Text color="brand.muted">{[86,64,92][i]}%</Text></HStack><Progress value={[86,64,92][i]} mt={2} rounded="full"/></div>)}</VStack></CardBody></Card>}

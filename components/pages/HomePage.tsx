@@ -1,4 +1,3 @@
-"use client";
 import PublicLayout from '@/components/layout/PublicLayout';
 import Hero from '@/components/home/Hero'; import ProgramOverview from '@/components/home/ProgramOverview'; import FeatureGrid from '@/components/home/FeatureGrid'; import DeviceMonitoringPreview from '@/components/home/DeviceMonitoringPreview'; import DashboardPreview from '@/components/home/DashboardPreview'; import CareWorkflow from '@/components/home/CareWorkflow'; import PatientAppSection from '@/components/home/PatientAppSection'; import Testimonials from '@/components/home/Testimonials'; import CTASection from '@/components/home/CTASection';
 export default function HomePage(){return <PublicLayout><Hero/><ProgramOverview/><FeatureGrid/><DeviceMonitoringPreview/><DashboardPreview/><CareWorkflow/><PatientAppSection/><Testimonials/><CTASection/></PublicLayout>}

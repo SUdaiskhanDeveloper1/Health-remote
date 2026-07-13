@@ -1,3 +1,2 @@
-"use client";
 import { Badge, Card, CardBody, Heading, HStack, Progress, Text } from '@chakra-ui/react';
 export default function TimeTrackerCard(){return <Card bg="white"><CardBody><HStack justify="space-between"><Heading size="md">Time Tracking</Heading><Badge variant="success">Auto UI</Badge></HStack><Text mt={4} color="brand.muted">Monthly billable care time</Text><Heading size="xl" mt={2}>742h 18m</Heading><Progress value={76} rounded="full" mt={4}/></CardBody></Card>}

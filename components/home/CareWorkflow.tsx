@@ -1,4 +1,3 @@
-"use client";
 import { Box, Container, Grid, HStack, Text, VStack } from '@chakra-ui/react'; import SectionHeading from '@/components/ui/SectionHeading';
 const steps=['Enroll patient','Collect vitals','Review alerts','Document care','Prepare report'];
 export default function CareWorkflow(){return <Box py={16}><Container maxW="7xl"><SectionHeading eyebrow="Workflow" title="A clear care management journey from enrollment to reporting" description="Use this section to explain enterprise clinical operations in a simple, visual way."/><Grid mt={10} templateColumns={{base:'1fr',md:'repeat(5,1fr)'}} gap={4}>{steps.map((s,i)=><VStack key={s} bg="white" p={6} rounded="24px" border="1px solid" borderColor="brand.border"><HStack w="42px" h="42px" rounded="full" bg="brand.blue" color="white" justify="center" fontWeight="900">{i+1}</HStack><Text fontWeight="800" textAlign="center">{s}</Text></VStack>)}</Grid></Container></Box>}

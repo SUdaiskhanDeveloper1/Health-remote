@@ -1,3 +1,2 @@
-"use client";
 import { Card, CardBody, Heading, Radio, RadioGroup, Stack, Textarea } from '@chakra-ui/react';
 export default function SymptomsTracker(){return <Card bg="white"><CardBody><Heading size="md" mb={4}>Symptoms Tracker</Heading><RadioGroup defaultValue="2"><Stack direction="row"><Radio value="1">Good</Radio><Radio value="2">Okay</Radio><Radio value="3">Needs help</Radio></Stack></RadioGroup><Textarea mt={4} placeholder="Add symptom note placeholder"/></CardBody></Card>}

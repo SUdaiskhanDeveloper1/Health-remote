@@ -1,4 +1,3 @@
-"use client";
 import { notFound } from 'next/navigation';
 import PublicLayout from '@/components/layout/PublicLayout'; import ProgramHero from '@/components/programs/ProgramHero'; import ProgramFeatureGrid from '@/components/programs/ProgramFeatureGrid'; import WorkflowSteps from '@/components/programs/WorkflowSteps'; import ProgramDashboardPreview from '@/components/programs/ProgramDashboardPreview'; import BenefitCards from '@/components/programs/BenefitCards'; import ProgramCTA from '@/components/programs/ProgramCTA'; import { programBySlug } from '@/data/programs';
 export default function ProgramPageClient({slug}:{slug:string}){const program=programBySlug(slug); if(!program) return notFound(); return <PublicLayout><ProgramHero program={program}/><ProgramFeatureGrid program={program}/><ProgramDashboardPreview program={program}/><WorkflowSteps program={program}/><BenefitCards/><ProgramCTA/></PublicLayout>}

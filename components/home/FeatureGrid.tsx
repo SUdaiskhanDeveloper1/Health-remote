@@ -1,4 +1,3 @@
-"use client";
 import { Box, Container, SimpleGrid } from '@chakra-ui/react';
 import SectionHeading from '@/components/ui/SectionHeading'; import FeatureIconCard from '@/components/ui/FeatureIconCard';
 const features=[['Workflow automation','Clock','Time tracking, service summaries, reminders, and task flows as frontend placeholders.'],['Care coordination','Users','Shared care team notes, progress cards, and communication panels.'],['Billing report UI','ReceiptText','Monthly billing summaries and program comparison tables.'],['Compliance-focused tone','ShieldCheck','HIPAA-ready UI concept language without claiming real compliance.'],['Patient engagement','Smartphone','Mobile app mockups for vitals, symptoms, education, and reminders.'],['Device monitoring','RadioTower','4G, Bluetooth, and app sync device status dashboards.']];

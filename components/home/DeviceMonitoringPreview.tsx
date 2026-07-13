@@ -1,3 +1,2 @@
-"use client";
 import { Box, Container, SimpleGrid } from '@chakra-ui/react'; import SectionHeading from '@/components/ui/SectionHeading'; import DeviceCard from '@/components/devices/DeviceCard'; import { devices } from '@/data/devices';
 export default function DeviceMonitoringPreview(){return <Box py={16} bg="white"><Container maxW="7xl"><SectionHeading center eyebrow="Device Monitoring" title="Connected-device inspired monitoring UI" description="Show 4G, Bluetooth, and patient app sync workflows with static cards and alert states."/><SimpleGrid mt={10} columns={{base:1,md:2,lg:4}} spacing={5}>{devices.slice(0,4).map(d=><DeviceCard key={d.id} device={d}/>)}</SimpleGrid></Container></Box>}

@@ -20,9 +20,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { Activity, Bell, FileText, Smartphone } from "lucide-react";
-import { motion } from "framer-motion";
 import Link from "next/link";
-const MotionBox = motion(Box);
 export default function Hero() {
   const cards = [
     ["RPM Monitoring", Activity],
@@ -42,11 +40,7 @@ export default function Hero() {
           gap={10}
           alignItems="baseline"
         >
-          <MotionBox
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <Box className="fade-in-up">
             <Badge variant="info"  mb={6}>
               Healthcare SaaS
             </Badge>
@@ -76,12 +70,8 @@ export default function Hero() {
                 Explore Programs
               </Button>
             </Stack>
-          </MotionBox>
-          <MotionBox
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-          >
+          </Box>
+          <Box className="fade-in-right">
             <Card bg="white" p={2}>
               <CardBody>
                 <HStack justify="space-between" mb={5}>
@@ -141,7 +131,7 @@ export default function Hero() {
                 </SimpleGrid>
               </CardBody>
             </Card>
-          </MotionBox>
+          </Box>
         </Grid>
       </Container>
     </Box>
