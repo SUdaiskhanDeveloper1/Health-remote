@@ -1,3 +1,32 @@
 "use client";
-import { Box, Button, Container, Heading, Stack, Text } from '@chakra-ui/react'; import Link from 'next/link';
-export default function CTASection(){return <Box py={16}><Container maxW="7xl"><Box bgGradient="linear(to-r, brand.navy, brand.blue)" color="white" rounded="32px" p={{base:8,md:12}}><Heading size="2xl" color="white">Ready to present a premium healthcare SaaS concept?</Heading><Text mt={4} color="whiteAlpha.800" fontSize="lg">Use this frontend-only template for portfolio, demo, or product concept presentations.</Text><Stack direction={{base:'column',sm:'row'}} mt={8}><Button as={Link} href="/request-demo" variant="demo">Request Demo</Button><Button as={Link} href="/pricing" variant="secondary">View Pricing UI</Button></Stack></Box></Container></Box>}
+import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
+export default function CTASection() {
+  return (
+    <Box py={16}>
+      <Container maxW="7xl">
+        <Box
+          bgGradient="linear(to-r, brand.navy, brand.blue)"
+          color="white"
+          rounded="32px"
+          p={{ base: 8, md: 12 }}
+        >
+          <Heading size="2xl" color="white">
+            Ready to present a premium healthcare SaaS concept?
+          </Heading>
+          <Text mt={4} color="whiteAlpha.800" fontSize="lg">
+            Use this frontend-only template for portfolio.
+          </Text>
+          <Stack direction={{ base: "column", sm: "row" }} mt={8}>
+            <Button as={Link} href="/request-demo" variant="demo">
+              Request Demo
+            </Button>
+            <Button as={Link} href="/pricing" variant="secondary">
+              View Pricing UI
+            </Button>
+          </Stack>
+        </Box>
+      </Container>
+    </Box>
+  );
+}
